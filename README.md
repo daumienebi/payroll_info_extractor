@@ -32,7 +32,7 @@ This version automatically scans its directory for all available PDF files, proc
 2. Ensure the sample PDFs are located in the same directory as the script.
 3. Run the Python script:
    ```bash
-   python procesar_nominas.py
+   python payroll_info_extractor.py
    ```
 4. The terminal will display the extraction progress and the parsed JSON data in real-time.
 5. Once finished, a file named `resumen_nominas.xlsx` will be generated in the same folder containing all the structured data.
@@ -45,14 +45,16 @@ This version provides a user-friendly graphical web interface that allows users 
 
 **Steps to test:**
 1. Open a terminal and navigate to the folder containing the web version.
-2. Start the Streamlit application by running:
+2. Install Streamlit (if you haven't already) by running:
    ```bash
-   streamlit run app.py
-   ```
-3. Your default web browser will automatically open the app at `http://localhost:8501`.
-4. Drag and drop the sample PDFs from the folder into the upload area of the web interface.
-5. Click **"Procesar Nóminas"** to start the extraction. A progress bar will indicate the status.
-6. Once the process is complete, a data table will appear on the screen, along with a button to download the results directly as `resumen_nominas_ia.xlsx`.
+   pip install streamlit```
+3. Start the Streamlit application by running:
+   ```bash
+   streamlit run app.py```
+4. Your default web browser will automatically open the app at `http://localhost:8501`.
+5. Drag and drop the sample PDFs from the folder into the upload area of the web interface.
+6. Click **"Procesar Nóminas"** to start the extraction. A progress bar will indicate the status.
+7. Once the process is complete, a data table will appear on the screen, along with a button to download the results directly as `resumen_nominas_ia.xlsx`.
 
 ---
 
